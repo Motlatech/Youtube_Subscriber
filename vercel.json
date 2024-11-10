@@ -1,11 +1,15 @@
 {
     "version": 2,
-    "functions": {
-        "api/*": {
-            "runtime": "@vercel/node",  
-            "timeout": 60
+    "builds": [
+        {
+            "src": "./server.js",
+            "use": "@vercel/node",
+            "config": {
+                "memory": 1024,
+                "timeout": 60
+            }
         }
-    },
+    ],
     "routes": [
         {
             "src": "/.*",
@@ -13,3 +17,4 @@
         }
     ]
 }
+
