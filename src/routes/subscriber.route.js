@@ -1,7 +1,8 @@
 const express = require ("express");
+const router = express.Router();
 const { getAllSubscribers,getSubscriberById,getSubscribersName } = require ("../controller/subscriber.controller");
 
-const router = express.Router();
+
 
 router.use(express.json());
 //routes
