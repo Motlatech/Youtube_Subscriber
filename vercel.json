@@ -1,15 +1,11 @@
 {
     "version": 2,
-    "builds": [
-        {
-            "src": "./server.js",
-            "use": "@vercel/node",
-            "config": {
-                "maxLambdaSize": "50mb",
-                "timeout": 60
-            }
+    "functions": {
+        "api/*": {
+            "runtime": "@vercel/node",  
+            "timeout": 60
         }
-    ],
+    },
     "routes": [
         {
             "src": "/.*",
