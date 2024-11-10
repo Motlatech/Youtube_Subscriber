@@ -1,8 +1,9 @@
 const subDbURI = process.env.subDatabase;
 const mongoose = require ("mongoose");
+const dotenv = require ("dotenv");
+dotenv.config();
 
-
-// create Database
+// connect to Database
 
 
 const connectDb = async () => {
