@@ -24,8 +24,8 @@ const getSubscribersName = async(req,res)=> {
 };
 
 const getSubscriberById = async(req,res) => {
+ const {id}=req.params;
     try{
-        const id=req.params.id;
         const SubscriberById = await subscriber.findById(id);
         if(!subscriber){
             // if subscriber not found give status code 404
