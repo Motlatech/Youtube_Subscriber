@@ -1,4 +1,4 @@
-const subDb_URI = process.env.subDatabase;
+const subDbURI = process.env.subDatabase;
 const mongoose = require ("mongoose");
 
 
@@ -7,7 +7,7 @@ const mongoose = require ("mongoose");
 
 const connectDb = async () => {
     try{
-        await mongoose.connect(subDb_URI);
+        await mongoose.connect(subDbURI);
     }catch(error){
       console.log(error);
     }
