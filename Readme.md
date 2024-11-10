@@ -22,6 +22,8 @@ This Youtube Subscriber App built with Express.js and MongoDB, this app retrieve
 
 ### 1. Clone Repository
 ```bash
+git clone https://github.com/Motlatech/Youtube_Subscriber.git
+cd Youtube_Subscriber
 ```
 
 ### 2. Installation
