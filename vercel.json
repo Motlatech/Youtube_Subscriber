@@ -1,10 +1,6 @@
 {
     "version": 2,
-     "function":{
-        "api/*":{
-            "timeout":60
-        }
-    },
+     
      "builds": [
         {
             "src": "./server.js",
