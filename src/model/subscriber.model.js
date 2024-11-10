@@ -4,11 +4,14 @@ const mongoose = require("mongoose");
 const subscriberSchema = new mongoose.Schema({
     subscriberName: {
         type: String,
-        required : true
+        required : true,
+        trim: true,
+        minLenght:3
     },
     subscribedChannel: {
         type : String,
-        required : true
+        required : true,
+         trim: true,
     },
     subscribedDate: {
         type : Date,
